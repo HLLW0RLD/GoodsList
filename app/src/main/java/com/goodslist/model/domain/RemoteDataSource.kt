@@ -1,8 +1,8 @@
 package com.goodslist.model.domain
 
-import com.goodslist.model.data.Product
 import io.reactivex.rxjava3.core.Observable
+import okhttp3.ResponseBody
 
 interface RemoteDataSource {
-    fun getList() : Observable<Product>
+    fun getList() : Observable<ResponseBody>
 }

@@ -10,12 +10,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        if (savedInstanceState == null){
-            supportFragmentManager
-                .beginTransaction()
-                .add(R.id.container, ListFragment.newInstance())
-                .addToBackStack("")
-                .commitAllowingStateLoss()
+        if (savedInstanceState == null) {
+            supportFragmentManager.apply {
+                beginTransaction().apply {
+                    add(R.id.container, ListFragment.newInstance())
+                    addToBackStack("")
+                    commitAllowingStateLoss()
+                }
+            }
         }
     }
 }

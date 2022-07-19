@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/code_size_details"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -17,17 +19,21 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         android:textSize="@dimen/name_size_details"
         android:textStyle="bold"
-        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/code"/>
+        app:layout_constraintTop_toBottomOf="@+id/code"
+        app:layout_constraintBottom_toTopOf="@id/line"/>
 
     <View
         android:id="@+id/line"
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -36,7 +42,10 @@
         android:id="@+id/remainder_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
+        android:text="@string/remainder"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line" />
 
@@ -44,7 +53,10 @@
         android:id="@+id/price_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
+        android:text="@string/price"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/remainder_title" />
 
@@ -52,7 +64,10 @@
         android:id="@+id/retail_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
+        android:text="@string/retail"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/price_title" />
 
@@ -60,7 +75,10 @@
         android:id="@+id/type_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
+        android:text="@string/type"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/retail_title" />
 
@@ -68,7 +86,10 @@
         android:id="@+id/alcohol_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
+        android:text="@string/alcohol"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type_title" />
 
@@ -76,7 +97,9 @@
         android:id="@+id/remainder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/line"/>
 
@@ -84,7 +107,9 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/remainder" />
 
@@ -92,7 +117,9 @@
         android:id="@+id/retail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/price" />
 
@@ -101,6 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/retail"/>
 
@@ -108,7 +136,9 @@
         android:id="@+id/alcohol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/attr_size_details"
         android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/type"/>
 

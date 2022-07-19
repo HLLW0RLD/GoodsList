@@ -5,4 +5,6 @@
     <dimen name="name_width_card">190dp</dimen>
     <dimen name="numbers_size_card">15dp</dimen>
     <dimen name="name_size_details">30dp</dimen>
+    <dimen name="code_size_details">25dp</dimen>
+    <dimen name="attr_size_details">17dp</dimen>
 </resources>

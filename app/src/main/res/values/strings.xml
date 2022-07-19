@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">GoodsList</string>
     <string name="code">Код:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remainder">Остаток</string>
+    <string name="price">Цена</string>
+    <string name="retail">Розничная сумма</string>
+    <string name="type">Алкогольная продукция</string>
+    <string name="alcohol">Содержание спирта</string>
 </resources>
